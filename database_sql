@@ -1,0 +1,96 @@
+CREATE TABLE  public.country  (
+	 iso_3166_1_code  char(2) NOT NULL UNIQUE,
+	 name  varchar(50) NOT NULL UNIQUE,
+	 capital  varchar(40) NOT NULL UNIQUE,
+	 continent  varchar(20) NOT NULL,
+	 eu  BOOLEAN NOT NULL,
+	 currency_code  char(3) NOT NULL,
+	 main_language  varchar(30) NOT NULL,
+	 main_religion  varchar(20),
+	 entry_condition1  varchar(20),
+	 price_of_entry_1  int,
+	 time_span_of_entry_1  int,
+	 entry_condition_2  varchar(20),
+	 price_of_entry_2  integer,
+	 time_span_of_entry_2  integer,
+	 driving_side  varchar(5),
+	 driving_licence  varchar(20),
+	 mandatory_vacc  varchar(30),
+	CONSTRAINT  country_pk  PRIMARY KEY ( iso_3166_1_code )
+) WITH (
+  OIDS=FALSE
+);
+
+
+
+CREATE TABLE  public.currency  (
+	 iso_4217_code  char(3) NOT NULL UNIQUE,
+	 name  varchar(50) NOT NULL UNIQUE,
+	 subunit  varchar(50),
+	 revolut_available  BOOLEAN,
+	CONSTRAINT  currency_pk  PRIMARY KEY ( iso_4217_code )
+) WITH (
+  OIDS=FALSE
+);
+
+
+
+CREATE TABLE  public.entry_conditions  (
+	 condition  varchar(20) NOT NULL UNIQUE,
+	 where_to_get  varchar(30),
+	CONSTRAINT  entry_conditions_pk  PRIMARY KEY ( condition )
+) WITH (
+  OIDS=FALSE
+);
+
+
+
+CREATE TABLE  public.religion  (
+	 name  varchar(20) NOT NULL UNIQUE,
+	 wiki_page  TEXT UNIQUE,
+	CONSTRAINT  religion_pk  PRIMARY KEY ( name )
+) WITH (
+  OIDS=FALSE
+);
+
+
+
+CREATE TABLE  public.driving_licence  (
+	 type  varchar(20) NOT NULL UNIQUE,
+	 where_to_get  varchar(30),
+	 price  integer,
+	CONSTRAINT  driving_licence_pk  PRIMARY KEY ( type )
+) WITH (
+  OIDS=FALSE
+);
+
+
+
+CREATE TABLE  public.vaccines  (
+	 type  varchar(40) NOT NULL UNIQUE,
+	 price  TEXT,
+	CONSTRAINT  vaccines_pk  PRIMARY KEY ( type )
+) WITH (
+  OIDS=FALSE
+);
+
+
+
+CREATE TABLE  public.language  (
+	 iso_639_2_code  char(3) NOT NULL UNIQUE,
+	 name  varchar(30) NOT NULL UNIQUE,
+	 writing_system  varchar(20) NOT NULL,
+	CONSTRAINT  language_pk  PRIMARY KEY ( iso_639_2_code )
+) WITH (
+  OIDS=FALSE
+);
+
+
+
+ALTER TABLE  country  ADD CONSTRAINT  country_fk0  FOREIGN KEY ( currency_code ) REFERENCES  currency ( iso_4217_code );
+ALTER TABLE  country  ADD CONSTRAINT  country_fk1  FOREIGN KEY ( main_language ) REFERENCES  language ( name );
+ALTER TABLE  country  ADD CONSTRAINT  country_fk2  FOREIGN KEY ( main_religion ) REFERENCES  religion ( name );
+ALTER TABLE  country  ADD CONSTRAINT  country_fk3  FOREIGN KEY ( entry_condition1 ) REFERENCES  entry_conditions ( condition );
+ALTER TABLE  country  ADD CONSTRAINT  country_fk4  FOREIGN KEY ( entry_condition_2 ) REFERENCES  entry_conditions ( condition );
+ALTER TABLE  country  ADD CONSTRAINT  country_fk5  FOREIGN KEY ( driving_licence ) REFERENCES  driving_licence ( type );
+ALTER TABLE  country  ADD CONSTRAINT  country_fk6  FOREIGN KEY ( mandatory_vacc ) REFERENCES  vaccines ( type );
