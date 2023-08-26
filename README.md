@@ -11,12 +11,12 @@ It's main purpose is to help people travelling from my country - Poland. It stor
 I filled database with data about 20 countries useful to test some queries but it can be filled with more records.
 
 The repository contains:
-creating_database.txt - file with code used to create database
-database_queries.txt - file with code used to insert records to tables and create views containing some basic queries used on data
-backup_db.backup - database backup file
-export_to_csv.txt - file with code used to export database tables to 7 .csv files
-7 .csv files containing data from 7 tables
-travel_info_schema.png - schema created in erd.dbdesigner
+1. creating_database.txt - file with code used to create database
+2. database_queries.txt - file with code used to insert records to tables and create views containing some basic queries used on data
+3. backup_db.backup - database backup file
+4. export_to_csv.txt - file with code used to export database tables to 7 .csv files
+5. 7 .csv files containing data from 7 tables
+6. travel_info_schema.png - schema created in erd.dbdesigner
 
 Dictionary of some words and abbreviation used in database:
 eu - European Union
