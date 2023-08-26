@@ -1,0 +1,21 @@
+iso_3166_1_code;name;capital;continent;eu;currency_code;main_language;main_religion;entry_condition_1;price_of_entry_1;time_span_of_entry_1;entry_condition_2;price_of_entry_2;time_span_of_entry_2;driving_side;driving_licence;mandatory_vacc1;mandatory_vacc2
+ME;Czarnogóra;Podgorica;Europa;f;EUR;czarnogórski;chrześcijaństwo;dowód osobisty;0;30;paszport;0;90;prawa;podstawowe (kategoria B);;
+TH;Tajlandia;Bangkok;Azja;f;THB;tajski;buddyzm;paszport;0;30;wiza online;190;90;lewa;międzynarodowe;;
+FR;Francja;Paryż;Europa;t;EUR;francuski;chrześcijaństwo;dowód osobisty;0;;;;;prawa;podstawowe (kategoria B);;
+AL;Albania;Tirana;Europa;f;ALL;albański;islam;dowód osobisty;0;90;;;;prawa;podstawowe (kategoria B);;
+MA;Maroko;Rabat;Afryka;f;MAD;arabski;islam;paszport;0;90;;;;prawa;podstawowe (kategoria B);;
+IN;Indie;Nowe Delhi;Azja;f;INR;hindi;hinduizm;wiza online;273;30;wiza online;341;90;lewa;międzynarodowe;;
+ET;Etiopia;Addis Abeba;Afryka;f;ETB;amharski;chrześcijaństwo;wiza online;340;30;wiza online;830;90;prawa;kraju docelowego;;
+CM;Kamerun;Jaunde;Afryka;f;XAF;francuski;chrześcijaństwo;wiza turystyczna;690;180;wiza turystyczna;1030;365;prawa;międzynarodowe;żółta febra;polio
+GB;Wielka Brytania;Londyn;Europa;f;GBP;angielski;chrześcijaństwo;paszport;0;180;wiza turystyczna;540;;lewa;podstawowe (kategoria B);;
+US;Stany Zjednoczone;Waszyngton;Ameryka Północna;f;USD;angielski;chrześcijaństwo;paszport;0;180;wiza turystyczna;700;180;prawa;podstawowe (kategoria B);;
+MX;Meksyk;Meksyk;Ameryka Północna;f;MXN;hiszpański;chrześcijaństwo;paszport;0;180;;;;prawa;podstawowe (kategoria B);;
+ES;Hiszpania;Madryt;Europa;t;EUR;hiszpański;chrześcijaństwo;dowód osobisty;0;;;;;prawa;podstawowe (kategoria B);;
+IT;Włochy;Rzym;Europa;t;EUR;włoski;chrześcijaństwo;dowód osobisty;0;;;;;prawa;podstawowe (kategoria B);;
+PT;Portugalia;Lizbona;Europa;t;EUR;portugalski;chrześcijaństwo;dowód osobisty;0;;;;;prawa;podstawowe (kategoria B);;
+DE;Niemcy;Berlin;Europa;t;EUR;niemiecki;chrześcijaństwo;dowód osobisty;0;;;;;prawa;podstawowe (kategoria B);;
+GR;Grecja;Ateny;Europa;t;EUR;grecki;chrześcijaństwo;dowód osobisty;0;;;;;prawa;podstawowe (kategoria B);;
+TR;Turcja;Ankara;Azja;f;TRY;turecki;islam;dowód osobisty;0;90;wiza online;170;;prawa;podstawowe (kategoria B);;
+EG;Egipt;Kair;Afryka;f;EGP;arabski;islam;wiza przy wjeździe;110;30;;;;prawa;kraju docelowego;;
+CN;Chiny;Pekin;Azja;f;CNY;mandaryński;ateizm;wiza turystyczna;450;30;;;;prawa;kraju docelowego;;
+HR;Chorwacja;Zagrzeb;Europa;t;EUR;chorwacki;chrześcijaństwo;dowód osobisty;0;;;;;prawa;podstawowe (kategoria B);;

@@ -1,0 +1,248 @@
+-- Inserting data into tables
+
+--Currency
+
+INSERT INTO currency
+VALUES ('EUR', 'euro', 'eurocent', TRUE);
+INSERT INTO currency
+VALUES ('THB', 'bat tajski', 'satang', TRUE);
+INSERT INTO currency
+VALUES ('ALL', 'lek albański', 'qindarka', TRUE);
+INSERT INTO currency
+VALUES ('MAD', 'dirham marokański', 'centym', TRUE);
+INSERT INTO currency
+VALUES ('INR', 'rupia indyjska', 'pajsa', TRUE);
+INSERT INTO currency
+VALUES ('ETB', 'birr', 'centym', TRUE);
+INSERT INTO currency
+VALUES ('XAF', 'frank środkowoafrykański', 'centym', TRUE);
+INSERT INTO currency
+VALUES ('GBP', 'funt szterling', 'pens', TRUE);
+INSERT INTO currency
+VALUES ('USD', 'dolar amerykański', 'cent', TRUE);
+INSERT INTO currency
+VALUES ('MXN', 'peso meksykańskie', 'centavo', TRUE);
+INSERT INTO currency
+VALUES ('TRY', 'lira turecka', 'kurusz', TRUE);
+INSERT INTO currency
+VALUES ('EGP', 'funt egipski', 'piastr', TRUE);
+INSERT INTO currency
+VALUES ('CNY', 'renminbi', 'yuan/jiao/fen', TRUE);
+
+--Religion
+
+INSERT INTO religion
+VALUES ('buddyzm', 'https://pl.wikipedia.org/wiki/Buddyzm');
+INSERT INTO religion
+VALUES ('islam', 'https://pl.wikipedia.org/wiki/Islam');
+INSERT INTO religion
+VALUES ('hinduizm', 'https://pl.wikipedia.org/wiki/Hinduizm');
+INSERT INTO religion
+VALUES ('chrześcijaństwo', 'https://pl.wikipedia.org/wiki/Chrze%C5%9Bcija%C5%84stwo');
+INSERT INTO religion
+VALUES ('ateizm', 'https://pl.wikipedia.org/wiki/Ateizm');
+
+--Entry conditions
+
+INSERT INTO entry_conditions
+VALUES ('dowód osobisty', 'urząd gminy');
+INSERT INTO entry_conditions
+VALUES ('paszport', 'biuro paszportowe');
+INSERT INTO entry_conditions
+VALUES ('wiza online', 'online');
+INSERT INTO entry_conditions
+VALUES ('wiza turystyczna', 'ambasada/konsulat');
+INSERT INTO entry_conditions
+VALUES ('wiza przy wjeździe', 'przejście graniczne');
+
+--Languages
+
+INSERT INTO language
+VALUES ('crn', 'czarnogórski', 'cyrlica српска');
+INSERT INTO language
+VALUES ('tha', 'tajski', 'tajskie อักษรไทย');
+INSERT INTO language
+VALUES ('fra', 'francuski', 'łacińskie');
+INSERT INTO language
+VALUES ('alb', 'albański', 'łacińskie');
+INSERT INTO language
+VALUES ('ara', 'arabski', 'arabskie الْأَبْجَدِيَّة الْعَرَبِيَّة');
+INSERT INTO language
+VALUES ('hin', 'hindi', 'dewanagari देवनागरी');
+INSERT INTO language
+VALUES ('amh', 'amharski', 'etiopskie َፊደል');
+INSERT INTO language
+VALUES ('eng', 'angielski', 'łacińskie');
+INSERT INTO language
+VALUES ('spa', 'hiszpański', 'łacińskie');
+INSERT INTO language
+VALUES ('ita', 'włoski', 'łacińskie');
+INSERT INTO language
+VALUES ('por', 'portugalski', 'łacińskie');
+INSERT INTO language
+VALUES ('ger', 'niemiecki', 'łacińskie');
+INSERT INTO language
+VALUES ('gre', 'grecki', 'greckie ελληνικό αλφάβητο');
+INSERT INTO language
+VALUES ('chi', 'mandaryński', 'chińskie 汉字');
+INSERT INTO language
+VALUES ('hrv', 'chorwacki', 'łacińskie');
+INSERT INTO language
+VALUES ('tur', 'turecki', 'łacińskie');
+
+--Vaccines
+
+INSERT INTO vaccines
+VALUES ('żółta febra', '200-300PLN');
+INSERT INTO vaccines
+VALUES ('polio', '80-130PLN');
+
+--Driving licence types
+
+INSERT INTO driving_licence
+VALUES ('kraju docelowego', 'organ nadzorczy w kraju docelowym', NULL)
+INSERT INTO driving_licence
+VALUES ('podstawowe (kategoria B)', 'poprzez egzamin na prawo jazdy', NULL)
+INSERT INTO driving_licence
+VALUES ('międzynarodowe', 'starostwo powiatowe', 35)
+
+--Countries
+
+INSERT INTO country
+VALUES ('ME','Czarnogóra','Podgorica','Europa', FALSE, 'EUR', 'czarnogórski', 'chrześcijaństwo', 'dowód osobisty', 0, 30, 'paszport', 0, 90, 'prawa', 'podstawowe (kategoria B)', NULL, NULL );
+INSERT INTO country
+VALUES ('TH','Tajlandia','Bangkok','Azja', FALSE, 'THB', 'tajski', 'buddyzm', 'paszport', 0, 30, 'wiza online', 190, 90, 'lewa', 'międzynarodowe', NULL, NULL );
+INSERT INTO country
+VALUES ('FR','Francja','Paryż','Europa', TRUE, 'EUR', 'francuski', 'chrześcijaństwo', 'dowód osobisty', 0, NULL, NULL, NULL, NULL, 'prawa', 'podstawowe (kategoria B)', NULL, NULL );
+INSERT INTO country
+VALUES ('AL','Albania','Tirana','Europa', FALSE, 'ALL', 'albański', 'islam', 'dowód osobisty', 0, 90, NULL, NULL, NULL, 'prawa', 'podstawowe (kategoria B)', NULL, NULL );
+INSERT INTO country
+VALUES ('MA','Maroko','Rabat','Afryka', FALSE, 'MAD', 'arabski', 'islam', 'paszport', 0, 90, NULL, NULL, NULL, 'prawa', 'podstawowe (kategoria B)', NULL, NULL );
+INSERT INTO country
+VALUES ('IN','Indie','Nowe Delhi','Azja', FALSE, 'INR', 'hindi', 'hinduizm', 'wiza online', 273, 30, 'wiza online', 341, 90, 'lewa', 'międzynarodowe', NULL, NULL );
+INSERT INTO country
+VALUES ('ET','Etiopia','Addis Abeba','Afryka', FALSE, 'ETB', 'amharski', 'chrześcijaństwo', 'wiza online', 340, 30, 'wiza online', 830, 90, 'prawa', 'kraju docelowego', NULL, NULL );
+INSERT INTO country
+VALUES ('CM','Kamerun','Jaunde','Afryka', FALSE, 'XAF', 'francuski', 'chrześcijaństwo', 'wiza turystyczna', 690, 180, 'wiza turystyczna', 1030, 365, 'prawa', 'międzynarodowe', 'żółta febra', 'polio' );
+INSERT INTO country
+VALUES ('GB','Wielka Brytania','Londyn','Europa', FALSE, 'GBP', 'angielski', 'chrześcijaństwo', 'paszport', 100, 90, 'wiza turystyczna', 520, 180, 'lewa', 'podstawowe (kategoria B)', NULL, NULL );
+INSERT INTO country
+VALUES ('US','Stany Zjednoczone','Waszyngton','Ameryka Północna', FALSE, 'USD', 'angielski', 'chrześcijaństwo', 'paszport', 0, 180, 'wiza turystyczna', 700, 180, 'prawa', 'podstawowe (kategoria B)', NULL, NULL );
+INSERT INTO country
+VALUES ('MX','Meksyk','Meksyk','Ameryka Północna', FALSE, 'MXN', 'hiszpański', 'chrześcijaństwo', 'paszport', 0, 180, NULL, NULL, NULL, 'prawa', 'podstawowe (kategoria B)', NULL, NULL );
+INSERT INTO country
+VALUES ('ES','Hiszpania','Madryt','Europa', TRUE, 'EUR', 'hiszpański', 'chrześcijaństwo', 'dowód osobisty', 0, NULL, NULL, NULL, NULL, 'prawa', 'podstawowe (kategoria B)', NULL, NULL  );
+INSERT INTO country
+VALUES ('IT','Włochy','Rzym','Europa', TRUE, 'EUR', 'włoski', 'chrześcijaństwo', 'dowód osobisty', 0, NULL, NULL, NULL, NULL, 'prawa', 'podstawowe (kategoria B)', NULL, NULL  );
+INSERT INTO country
+VALUES ('PT','Portugalia','Lizbona','Europa', TRUE, 'EUR', 'portugalski', 'chrześcijaństwo', 'dowód osobisty', 0, NULL, NULL, NULL, NULL, 'prawa', 'podstawowe (kategoria B)', NULL, NULL  );
+INSERT INTO country
+VALUES ('DE','Niemcy','Berlin','Europa', TRUE, 'EUR', 'niemiecki', 'chrześcijaństwo', 'dowód osobisty', 0, NULL, NULL, NULL, NULL, 'prawa', 'podstawowe (kategoria B)', NULL, NULL  );
+INSERT INTO country
+VALUES ('GR','Grecja','Ateny','Europa', TRUE, 'EUR', 'grecki', 'chrześcijaństwo', 'dowód osobisty', 0, NULL, NULL, NULL, NULL, 'prawa', 'podstawowe (kategoria B)', NULL, NULL  );
+INSERT INTO country
+VALUES ('TR','Turcja','Ankara','Azja', FALSE, 'TRY', 'turecki', 'islam', 'dowód osobisty', 0, 90, 'wiza online', 170, NULL, 'prawa', 'podstawowe (kategoria B)', NULL, NULL  );
+INSERT INTO country
+VALUES ('EG','Egipt','Kair','Afryka', FALSE, 'EGP', 'arabski', 'islam', 'wiza przy wjeździe', 110, 30, NULL, NULL, NULL, 'prawa', 'kraju docelowego', NULL, NULL  );
+INSERT INTO country
+VALUES ('CN','Chiny','Pekin','Azja', FALSE, 'CNY', 'mandaryński', 'ateizm', 'wiza turystyczna', 450, 30, NULL, NULL, NULL, 'prawa', 'kraju docelowego', NULL, NULL  );
+INSERT INTO country
+VALUES ('HR','Chorwacja','Zagrzeb','Europa', TRUE, 'EUR', 'chorwacki', 'chrześcijaństwo', 'dowód osobisty', 0, NULL, NULL, NULL, NULL, 'prawa', 'podstawowe (kategoria B)', NULL, NULL  );
+
+
+--Creating views
+
+--view selecting countries that Poles can travel to with only ID card
+
+CREATE VIEW no_passport_countries AS
+SELECT *
+FROM country
+WHERE entry_condition_1 = 'dowód osobisty'
+ORDER BY name;
+
+--view selecting countries that are a part of European Union and the currency is Euro
+
+CREATE VIEW euro_countries AS
+SELECT *
+FROM country
+WHERE eu = TRUE AND currency_code = 'EUR'
+ORDER BY name;
+
+--view selecting countries that Poles can travel to for a shortest stay only on first entry condition
+
+CREATE VIEW shortest_stay AS
+SELECT name AS country, time_span_of_entry_1
+FROM country
+WHERE time_span_of_entry_1 = (SELECT min(time_span_of_entry_1) FROM country);
+
+--view counting countries in Europe
+
+CREATE VIEW number_of_countries_in_Europe AS
+SELECT COUNT(*), continent
+FROM country
+WHERE continent = 'Europa'
+GROUP BY continent;
+
+--view selecting countries and the writing system used in them
+
+CREATE VIEW country_writing_system AS
+SELECT country.name AS country, language.writing_system 
+FROM country INNER JOIN language ON country.main_language = language.name;
+
+--view selecting countries that have currencies available in Revolut app
+
+CREATE VIEW country_currency_revolut AS
+SELECT country.name AS country, country.currency_code, currency.revolut_available 
+FROM country INNER JOIN currency ON country.currency_code = currency.iso_4217_code 
+WHERE revolut_available = TRUE;
+
+--views selecting countries that Poles can't travel with online visa and where to get one
+
+-- based on first condition
+
+CREATE VIEW country_entry_not_online_1 AS
+SELECT country.name AS country, country.entry_condition_1, entry_conditions.where_to_get 
+FROM country INNER JOIN entry_conditions ON country.entry_condition_1 = entry_conditions.condition
+WHERE country.entry_condition_1 NOT IN ('dowód osobisty', 'paszport')
+AND entry_conditions.where_to_get != 'online'
+GROUP BY country.name, country.entry_condition_1, entry_conditions.where_to_get;
+
+-- based on second condition
+
+CREATE VIEW country_entry_not_online_2 AS
+SELECT country.name AS country, country.entry_condition_2, entry_conditions.where_to_get 
+FROM country INNER JOIN entry_conditions ON country.entry_condition_2 = entry_conditions.condition
+WHERE country.entry_condition_2 NOT IN ('dowód osobisty', 'paszport')
+AND entry_conditions.where_to_get != 'online'
+GROUP BY country.name, country.entry_condition_2, entry_conditions.where_to_get;
+
+-- view selecting countries with basic price of entry above average
+
+CREATE VIEW entry_price_above_average AS
+SELECT name AS country, price_of_entry_1
+FROM country
+WHERE price_of_entry_1 > (SELECT AVG(price_of_entry_1) FROM country WHERE price_of_entry_1 != 0);
+
+-- views selecting countries with the price of mandatory vaccine required to travel to
+
+-- first vaccine
+
+CREATE VIEW country_vaccines_price_1 AS
+SELECT country.name AS country, country.mandatory_vacc1, vaccines.average_price
+FROM country INNER JOIN vaccines ON country.mandatory_vacc1 = vaccines.type
+GROUP BY country.name, country.mandatory_vacc1, vaccines.average_price;
+
+-- second vaccine
+
+CREATE VIEW country_vaccines_price_2 AS
+SELECT country.name AS country, country.mandatory_vacc2, vaccines.average_price
+FROM country INNER JOIN vaccines ON country.mandatory_vacc2 = vaccines.type
+GROUP BY country.name, country.mandatory_vacc2, vaccines.average_price;
+
+-- view selecting countries and details of how to get a driving licence mandatory to drive a car on their territory
+
+CREATE VIEW country_driving_licence AS
+SELECT country.name AS country, country.driving_licence, driving_licence.where_to_get, driving_licence.price
+FROM country INNER JOIN driving_licence ON country.driving_licence = driving_licence.type
+GROUP BY country.name, country.driving_licence, driving_licence.where_to_get, driving_licence.price;
+

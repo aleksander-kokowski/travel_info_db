@@ -1,0 +1,14 @@
+iso_4217_code;name;subunit;revolut_available
+EUR;euro;eurocent;t
+THB;bat tajski;satang;t
+ALL;lek albański;qindarka;t
+MAD;dirham marokański;centym;t
+INR;rupia indyjska;pajsa;t
+ETB;birr;centym;t
+XAF;frank środkowoafrykański;centym;t
+GBP;funt szterling;pens;t
+USD;dolar amerykański;cent;t
+MXN;peso meksykańskie;centavo;t
+TRY;lira turecka;kurusz;t
+EGP;funt egipski;piastr;t
+CNY;renminbi;yuan/jiao/fen;t
