@@ -3,7 +3,7 @@ It's main purpose is to help people travelling from my country - Poland. It stor
 1. country - stores data about countries in the world with 18 columns of basic information that is essential for every traveller
 2. currency - stores data about world's currencies essential for traveller including availability on popular financial technology app 'Revolut'
 3. language - stores data about world's languages including used writing system
-4. religion - stores data about world's religions including link to Wikiedia page
+4. religion - stores data about world's religions including link to Wikipedia page
 5. entry_conditions - stores data about a documents needed for travel e.g. ID cars, passport
 6. driving_licence - stores data about driving licence types essential to know for a traveller
 7. vaccines - stores data about vaccines that are mandatory to have in order to travel to some countries
